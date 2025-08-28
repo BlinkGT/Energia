@@ -182,8 +182,8 @@ elif st.session_state.examen_iniciado and not st.session_state.examen_finalizado
             try:
                 url_img = pregunta_imagenes[pregunta_idx]
                 # Si la ruta NO empieza con http(s) avisamos que es una ruta local
-                if not (str(url_img).lower().startswith("http://") or str(url_img).lower().startswith("https://")):
-                    st.warning(f"Advertencia: La imagen para la pregunta {pregunta_idx + 1} aún utiliza una ruta local ('{url_img}'). Por favor, reemplázala con la URL pública de tu imagen de GitHub para que sea visible en la aplicación web.")
+                # if not (str(url_img).lower().startswith("http://") or str(url_img).lower().startswith("https://")):
+                   # st.warning(f"Advertencia: La imagen para la pregunta {pregunta_idx + 1} aún utiliza una ruta local ('{url_img}'). Por favor, reemplázala con la URL pública de tu imagen de GitHub para que sea visible en la aplicación web.")
                 st.image(url_img, caption=f"Imagen para la Pregunta {pregunta_idx + 1}", use_container_width=True)
                 st.markdown("---")
             except Exception as e:
@@ -288,4 +288,5 @@ elif st.session_state.examen_finalizado:
 
     st.write("Puedes cerrar esta pestaña del navegador.")
     st.info("Para realizar el examen de nuevo, cierra y vuelve a abrir esta pestaña.")
+
 
