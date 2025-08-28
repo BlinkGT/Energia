@@ -12,8 +12,8 @@ GRAVEDAD = 9.81    # g en m/s^2
 # --- Diccionario de imágenes por pregunta ---
 # Reemplaza estas rutas por URLs públicas si quieres que se vean desde la web
 pregunta_imagenes = {
-    0: "images2/1.jpg",  # Pregunta 1 (Péndulo)
-    1: "images2/2.jpg",  # Pregunta 2 (Plano inclinado)
+    0: "images2/1.png",  # Pregunta 1 (Péndulo)
+    1: "images2/2.png",  # Pregunta 2 (Plano inclinado)
     2: "images2/3.png",  # Pregunta 3 (Resorte estirado)
     3: "images2/4.jpg",  # Pregunta 4 (Resorte comprimido)
     4: "images2/5.jpg"   # Pregunta 5 (Potencia)
@@ -288,3 +288,4 @@ elif st.session_state.examen_finalizado:
 
     st.write("Puedes cerrar esta pestaña del navegador.")
     st.info("Para realizar el examen de nuevo, cierra y vuelve a abrir esta pestaña.")
+
