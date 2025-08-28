@@ -6,7 +6,7 @@ import hashlib
 from datetime import datetime
 
 # --- Constantes ---
-TOLERANCIA = 0.05  # tolerancia en la comparación de respuestas (±0.05)
+TOLERANCIA = 1.00  # tolerancia en la comparación de respuestas (±1.00)
 GRAVEDAD = 9.81    # g en m/s^2
 
 # --- Diccionario de imágenes por pregunta ---
@@ -288,6 +288,7 @@ elif st.session_state.examen_finalizado:
 
     st.write("Puedes cerrar esta pestaña del navegador.")
     st.info("Para realizar el examen de nuevo, cierra y vuelve a abrir esta pestaña.")
+
 
 
 
