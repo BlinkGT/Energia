@@ -161,7 +161,7 @@ if not st.session_state.examen_iniciado:
             f"2) Una caja de masa ${clave}$ kg, se desliza por un plano inclinado sin fricción a $30^\circ$. Si la distancia recorrida sobre el plano es de ${clave}$ m, encuentre el trabajo realizado por el peso en J. Solo responde con la cantidad numérica. (2 decimales)",
             f"3) Se engancha una masa de ${clave}$ kg bajo un resorte y se suelta, de tal manera que este se estira 0.2 m. Encuentre la constante de dicho resorte en N/m. Solo responde con la cantidad numérica. (2 decimales)",
             f"4) Desde una altura de 1 m se deja caer una masa de ${clave}$ kg, como se observa en la figura. Esta masa comprimirá el resorte una distancia de 0.1 m. Encuentre la constante del resorte en N/m. Solo responde con la cantidad numérica. (2 decimales)",
-            f"5) El hombre de la figura empuja la caja sobre un plano inclinado sin fricción, a $25^\circ$ y con una altura de 10 m. La fuerza que el hombre ejerce es de 100 N. Si la caja recorre la rampa completa y el tiempo que el hombre tarda en hacerlo es de ${clave}$ segundos, encuentre la potencia del hombre en W. Solo responde con la cantidad numérica. (2 decimales)"
+            f"5) El hombre de la figura empuja la caja sobre un plano inclinado sin fricción, a $25^\circ$ y con una altura de 10 m. La fuerza que el hombre ejerce es de 100 N. Si la caja recorre la rampa completa y el tiempo que el hombre tarda en hacerlo es de ${clave}$ segundos, encuentre la potencia del hombre en Watts. Solo responde con la cantidad numérica. (2 decimales)"
         ]
         st.rerun()
 
@@ -288,6 +288,7 @@ elif st.session_state.examen_finalizado:
 
     st.write("Puedes cerrar esta pestaña del navegador.")
     st.info("Para realizar el examen de nuevo, cierra y vuelve a abrir esta pestaña.")
+
 
 
 
